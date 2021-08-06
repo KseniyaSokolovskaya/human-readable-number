@@ -39,7 +39,7 @@ module.exports = function toReadable(number) {
 
     switch (numStr.length) {
         case 1:
-            return unit[numStr];
+            return (numStr[0] === '0') ? 'zero' : unit[numStr];
             break;
 
         case 2:
